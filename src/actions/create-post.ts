@@ -105,5 +105,6 @@ export async function createPost(slug: string ,_: CreatePostFormState, formData:
     }
 
     revalidatePath(paths.topicShow(slug));
+    revalidatePath(paths.home());
     redirect(paths.postShow(slug, post.id));
 }

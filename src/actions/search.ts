@@ -11,3 +11,7 @@ export async function search(formData: FormData) {
 
     redirect(`/search?term=${term}`);
 }
+
+// export function searchPost(formData: FormData) {
+    
+// }

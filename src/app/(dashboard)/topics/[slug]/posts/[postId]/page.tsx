@@ -20,9 +20,9 @@ export default async function PostShowPage({ params }: PostShowPageProps) {
 
     return (
         <div className="space-y-3 container h-screen">
-            <Link className="decoration-solid flex gap-2 flex-row hover:underline mt-4" href={paths.topicShow(slug)}>
+            <Link className="inline-flex gap-2 hover:underline mt-4" href={paths.topicShow(slug)}>
                 <ArrowLeftIcon/>
-                Back to {slug}
+                Back to <strong>{slug}</strong>
             </Link>
             <Suspense fallback={<PostShowLoading />}>
                 <PostShow postId={postId} />
